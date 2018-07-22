@@ -15,21 +15,25 @@ export default IndexPage
 export const query = graphql`
   query SiteMeta { 
     site {
-      port
-      polyfill
       siteMetadata {
         title
         desc
       }
       buildTime
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {
+      fields: [frontmatter___date],
+      order: DESC
+    }) {
       edges {
         node {
           id
           frontmatter {
             title
             date(formatString: "MMMM DD YYYY")
+          }
+          fields {
+            slug
           }
           html
           excerpt
