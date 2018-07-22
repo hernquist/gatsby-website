@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Img from 'gatsby-image'
 
 // import self from '../images/self.jpg';
-import logo from "../images/logo.svg";
+import logo from "../../images/logo.svg";
 
 const HeaderWrapper = styled.div`
   margin-bottom: 1.45rem;
