@@ -56,7 +56,7 @@ class Header extends Component {
   componentDidUpdate = (prevProps, prevState) => {
     const { location } = this.props;
     if (location.pathname !== prevProps.location.pathname) {
-      if (location.pathname === '/generic-blog/') {
+      if (location.pathname === '/') {
         this.wrapper.animate([
           { height: '20vh' },
           { height: '70vh' }
@@ -85,7 +85,7 @@ class Header extends Component {
     console.log(location.pathname)
     return (
       <HeaderWrapper
-        isHome={location.pathname === '/generic-blog/'} 
+        isHome={location.pathname === '/'} 
         ref={wrapper => this.wrapper = ReactDOM.findDOMNode(wrapper)} 
       >
         <HeaderContainer>
