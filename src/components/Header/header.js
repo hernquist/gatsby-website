@@ -85,7 +85,7 @@ class Header extends Component {
     console.log(location.pathname)
     return (
       <HeaderWrapper
-        isHome={location.pathname === '/generic-blog//'} 
+        isHome={location.pathname === '/generic-blog/'} 
         ref={wrapper => this.wrapper = ReactDOM.findDOMNode(wrapper)} 
       >
         <HeaderContainer>
