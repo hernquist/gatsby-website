@@ -55,6 +55,8 @@ class Header extends Component {
 
   componentDidUpdate = (prevProps, prevState) => {
     const { location } = this.props;
+    console.log(location);
+    
     if (location.pathname !== prevProps.location.pathname) {
       if (location.pathname === '/') {
         this.wrapper.animate([

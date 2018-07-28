@@ -12,6 +12,8 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage
 
+// sorting
+
 export const query = graphql`
   query SiteMeta { 
     site {
